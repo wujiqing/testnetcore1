@@ -13,7 +13,7 @@ variables:
   dockerId: wjq吴生                 # 阿里云 login username
   namespace: webnetcore                              # 阿里云 命名空间
   imageName: testsite                        # 阿里云 仓库名称
-  registry: registry.cn-hangzhou.aliyuncs.com   # 阿里云 公网地址
+  registry: registry.cn-hangzhou.aliyuncs.com/webnetcore/testsite   # 阿里云 公网地址
   dockerfilepath:  wujiqing/testnetcore1/MySite/MySite/       # Github Dockerfile相对路径
   pwd: 378218095aA
 
