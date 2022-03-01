@@ -21,6 +21,6 @@ steps:
 - script: |
     docker build -f $(dockerfilepath) -t $(imageName):$(Build.BuildId) .
     docker login -u $(dockerId) -p $(pwd) $(registry)
-    docker tag $(imageName) $(registry)/$(namespace)/$(imageName)
-    docker push $(registry)/$(namespace)/$(imageName):$(Build.BuildId)
+    docker tag $(imageName) $(registry)/$(namespace)/$(imageName):$(Build.BuildId)
+    docker push $(registry)/$(namespace)/$(imageName)
   displayName: push to aliyun
