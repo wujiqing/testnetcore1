@@ -19,7 +19,7 @@ variables:
 
 steps:
 - script: |
-    docker build -f $(dockerfilepath) -t $(imageName):001 .
-    docker login -u $(dockerId) -p $(pwd) $(registry)
-    docker push $(registry)/$(namespace)/$(imageName):001
+    docker build -f $(dockerfilepath) -t $(registry)/$(namespace)/$(imageName):$(Build.BuildId) .
+    docker login -u $(dockerId) -p $(pwd) $(registry) 
+    docker push $(registry)/$(namespace)/$(imageName):$(Build.BuildId)
   displayName: push to aliyun
