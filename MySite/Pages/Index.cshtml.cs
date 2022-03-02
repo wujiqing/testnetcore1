@@ -32,8 +32,7 @@ namespace MySite.Pages
 
                 var filePath = path + DateTime.Now.ToString("yyyyMMdd") + ".log";
                 System.IO.File.WriteAllText(filePath, text);
-
-                Thread.Sleep(5000); 
+                 
             }
 
         }
