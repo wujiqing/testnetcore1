@@ -20,7 +20,7 @@ namespace MySite.Pages
 
         public void OnGet()
         { 
-                var text = $"====test{DateTime.Now.ToString("yyyyMMddHHmmss") }========";
+                var text = $"===={DateTime.Now.ToString("yyyyMMddHHmmss") }--测试========";
                 var path = "/logs/mysite/";
 
                 if (!System.IO.Directory.Exists(path))
@@ -29,7 +29,7 @@ namespace MySite.Pages
                 }
 
                 var filePath = path + DateTime.Now.ToString("yyyyMMdd") + ".log";
-                System.IO.File.WriteAllText(filePath, text);
+                System.IO.File.AppendAllText(filePath, text);
                   
         }
     }
