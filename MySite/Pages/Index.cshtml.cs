@@ -23,7 +23,7 @@ namespace MySite.Pages
             while (true)
             {
                 var text = $"====test{DateTime.Now.ToString("yyyyMMddHHmmss") }========";
-                var path = "/var/logs/mysite/";
+                var path = "/logs/mysite/";
 
                 if (!System.IO.Directory.Exists(path))
                 {
