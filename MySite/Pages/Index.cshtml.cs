@@ -19,9 +19,7 @@ namespace MySite.Pages
         }
 
         public void OnGet()
-        {
-            while (true)
-            {
+        { 
                 var text = $"====test{DateTime.Now.ToString("yyyyMMddHHmmss") }========";
                 var path = "/logs/mysite/";
 
@@ -32,9 +30,7 @@ namespace MySite.Pages
 
                 var filePath = path + DateTime.Now.ToString("yyyyMMdd") + ".log";
                 System.IO.File.WriteAllText(filePath, text);
-                 
-            }
-
+                  
         }
     }
 }
