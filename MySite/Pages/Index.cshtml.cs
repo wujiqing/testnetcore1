@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MySite.Pages
@@ -19,6 +20,21 @@ namespace MySite.Pages
 
         public void OnGet()
         {
+            while (true)
+            {
+                var text = $"====test{DateTime.Now.ToString("yyyyMMddHHmmss") }========";
+                var path = "/var/logs/mysite/";
+
+                if (!System.IO.Directory.Exists(path))
+                {
+                    System.IO.Directory.CreateDirectory(path);
+                }
+
+                var filePath = path + DateTime.Now.ToString("yyyyMMdd") + ".log";
+                System.IO.File.WriteAllText(filePath, text);
+
+                Thread.Sleep(5000); 
+            }
 
         }
     }

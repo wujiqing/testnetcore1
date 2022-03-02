@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MySite\\TestDevOps\\Github\\Site3\\testnetcore1\\MySite\\MySite\\MySite.csproj": {}
+    "D:\\MySite\\TestDevOps\\Github\\Site5\\testnetcore1\\MySite\\MySite.csproj": {}
   },
   "projects": {
-    "D:\\MySite\\TestDevOps\\Github\\Site3\\testnetcore1\\MySite\\MySite\\MySite.csproj": {
+    "D:\\MySite\\TestDevOps\\Github\\Site5\\testnetcore1\\MySite\\MySite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MySite\\TestDevOps\\Github\\Site3\\testnetcore1\\MySite\\MySite\\MySite.csproj",
+        "projectUniqueName": "D:\\MySite\\TestDevOps\\Github\\Site5\\testnetcore1\\MySite\\MySite.csproj",
         "projectName": "MySite",
-        "projectPath": "D:\\MySite\\TestDevOps\\Github\\Site3\\testnetcore1\\MySite\\MySite\\MySite.csproj",
+        "projectPath": "D:\\MySite\\TestDevOps\\Github\\Site5\\testnetcore1\\MySite\\MySite.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MySite\\TestDevOps\\Github\\Site3\\testnetcore1\\MySite\\MySite\\obj\\",
+        "outputPath": "D:\\MySite\\TestDevOps\\Github\\Site5\\testnetcore1\\MySite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
